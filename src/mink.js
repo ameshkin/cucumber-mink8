@@ -21,7 +21,7 @@ const DEFAULT_CONFIG = {
 
 function gherkin(cucumber) {
   definitions.forEach(([pattern, fn]) => {
-    cucumber.defineStep(pattern, fn);
+    cucumber.Given(pattern, fn);
   });
 }
 
